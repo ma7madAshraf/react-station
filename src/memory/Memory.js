@@ -26,6 +26,7 @@ const Memory = () => {
   const [isSucceed, setIsSucceed] = useState(false);
   const [difficulty, setDifficulty] = useState("easy");
   const [isFailed, setIsFailed] = useState(false);
+  // eslint-disable-next-line
   const [remain, setRemain] = useState(0);
   const [lives, setLives] = useState(0);
   const duration = 800;
