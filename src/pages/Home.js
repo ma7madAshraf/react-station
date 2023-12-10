@@ -51,7 +51,7 @@ const Home = () => {
 };
 
 const Wrapper = styled.div`
-  margin: 60px auto 50px;
+  margin: 60px auto 25px;
   section {
     margin-bottom: 50px;
     img {
@@ -93,6 +93,9 @@ const Wrapper = styled.div`
       background-color: var(--primary-clr-6);
       color: #fff;
     }
+  }
+   section:last-of-type {
+    margin-bottom: 25px;
   }
 `;
 export default Home;
