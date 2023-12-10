@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.App{
+  font-family: Tahoma, sans-serif;
+  background-color: #E8EAF6;
+}
+:root{
+  --page-h:calc(100vh - 60px);
+  --transition:0.6s;  
+  --primary-clr-1:#E8EAF6;
+  --primary-clr-2:#C5CAE9;
+  --primary-clr-3:#9FA8DA;
+  --primary-clr-4:#7986CB;
+  --primary-clr-5:#5C6BC0;
+  --primary-clr-6:#3F51B5;
+  --primary-clr-7:#3949AB;
+  --primary-clr-8:#303F9F;
+  --primary-clr-9:#283593;
+  --primary-clr-10:#1A237E;
+}
+a{
+  text-decoration: none !important;
+}
+ul{
+  list-style: none;
+}

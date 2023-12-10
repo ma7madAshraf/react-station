@@ -1,0 +1,40 @@
+const data = {
+  easy: [
+    "Hello",
+    "Code",
+    "Town",
+    "Scala",
+    "Task",
+    "Test",
+    "Rust",
+    "Roles",
+    "Coding",
+    "Funny",
+  ],
+  normal: [
+    "Country",
+    "Testing",
+    "Youtube",
+    "Twitter",
+    "Github",
+    "Internet",
+    "Python",
+    "Runner",
+    "Playing",
+    "Working",
+  ],
+  hard: [
+    "Linkedin",
+    "Leetcode",
+    "Programming",
+    "Javascript",
+    "Destructuring",
+    "Paradigm",
+    "Styling",
+    "Cascade",
+    "Documentation",
+    "Dependencies",
+  ],
+};
+
+export default data;
