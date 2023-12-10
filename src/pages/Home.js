@@ -96,6 +96,7 @@ const Wrapper = styled.div`
   }
    section:last-of-type {
     margin-bottom: 25px;
+    padding-bottom: 50px;
   }
 `;
 export default Home;
