@@ -51,7 +51,7 @@ const Games = () => {
   );
 };
 const Wrapper = styled.div`
-  margin: 60px auto 50px;
+  margin: 60px auto 25px;
   section {
     margin-bottom: 50px;
     img {
@@ -104,6 +104,10 @@ const Wrapper = styled.div`
     .md-lg {
       display: block !important;
     }
+  }
+   section:last-of-type {
+    margin-bottom: 25px;
+    padding-bottom: 50px;
   }
 `;
 export default Games;
