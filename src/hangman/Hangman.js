@@ -10,6 +10,7 @@ import win from "../assets/sounds/win.mp3";
 import lose from "../assets/sounds/lose.mp3";
 
 const Hangman = () => {
+   // eslint-disable-next-line
   const [theData, setTheData] = useState(data);
   const [isSucceed, setIsSucceed] = useState(false);
   const [isFailed, setIsFailed] = useState(false);
@@ -40,8 +41,10 @@ const Hangman = () => {
     setIsFailed(false);
     setLives(7);
     setWrongTries(0);
+     // eslint-disable-next-line
     Array.from(document.querySelectorAll(".letters span.clicked")).map((e) => {
       e.classList.remove("clicked");
+       // eslint-disable-next-line
       Array.from(document.querySelectorAll(".guess-letters span")).map(
         (e) => (e.textContent = "")
       );
