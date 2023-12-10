@@ -343,23 +343,12 @@ const Memory = () => {
           <div className="result">
             <div className="lose">
               <div className="text">game over</div>
-              <div className="tries">
-                remain : <span>{remain} blocks</span>
-              </div>
               <button className="play-again" onClick={playAgain}>
                 play again
               </button>
             </div>
           </div>
         )}
-
-        {/* // <audio
-          //   id="sucess"
-          //   src="/sounds/notification-for-game-scenes-132473.mp3"
-          //   preload="auto"
-          // ></audio>
-          // <audio id="fail" src="/sounds/error-2-126514.mp3" preload="auto"></audio>
-         */}
       </div>
     </Wrapper>
   );
@@ -408,26 +397,30 @@ const Wrapper = styled.div`
   .memory-container {
     width: 100vw;
     margin-top: 60px;
+    background-color: var(--primary-clr-1);
+    min-height: var(--page-h);
   }
   .memory-container .game-info {
-    border: 2px solid #2196f3;
     display: flex;
-    padding: 10px 15px;
-    font-weight: bold;
-    text-transform: capitalize;
+    background-color: var(--primary-clr-6);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    margin-bottom: 5px;
+
+    @media (min-width: 768px) {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.3rem;
+    }
+    @media (min-width: 1200px) {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 1.3rem;
+    }
   }
-  .memory-container .game-info .name {
-    flex: 1;
-  }
-  .memory-container .game-info .tries {
-    text-align: right;
-  }
+
   .memory-container .blocks-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -570,18 +563,6 @@ const Wrapper = styled.div`
   }
   .memory-container .result .lose .text {
     background-color: #b73a3a;
-  }
-  .memory-container .result .tries {
-    font-size: 1rem;
-    color: white;
-    padding: 5px 10px;
-    @media (min-width: 768px) {
-      font-size: 1.5rem;
-      margin-top: -40px;
-    }
-  }
-  .memory-container .result .tries span {
-    color: indianred;
   }
 `;
 
