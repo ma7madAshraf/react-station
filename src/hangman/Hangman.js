@@ -57,7 +57,6 @@ const Hangman = () => {
     let checking = checkWord.includes(value);
     if (checking) {
       playSuccess();
-      console.log(true);
       let guessBoxes = Array.from(
         document.querySelectorAll(".guess-letters span")
       );
